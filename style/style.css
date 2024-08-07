@@ -37,7 +37,7 @@ nav {
 }
 
 .Logo img:hover {
-    transform: translate(0px, -8px);
+    transform: scale(1.2);
 }
 
 .nav-list {
@@ -63,16 +63,24 @@ nav {
     font-weight: bold;
 }
 
+.nav-list-links {
+  border-bottom: solid 2px transparent;
+  transition: .7s ease;
+}
+
 .nav-list-links:hover {
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px white;
 }
 
 .nav-button {
     color: var(--salmão);
+    transition: .7s ease;
+    border-bottom: solid 2px transparent;
 }
 
 .nav-button:hover {
-    border-bottom: solid 1px var(--salmão);
+    border-bottom: solid 2px var(--salmão);
+    text-shadow: 0 0 6px var(--salmão);
 }
 
 .mobile-menu {
@@ -168,10 +176,20 @@ nav {
     width: 45vw;
   }
 
+  .title1-link {
+    text-decoration: none;
+  }
+
   .title-box1 {
     font-size: 50px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--salmão);
+    transition: .4s ease;
+  }
+
+  .title-box1:hover {
+    text-shadow: 0 0 4px var(--salmão);
+    cursor: pointer;
   }
 
   .title-box2 {
@@ -184,6 +202,15 @@ nav {
     font-size: 20px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: white;
+  }
+
+  .img-container img {
+    transition: .8s ease;
+  }
+
+  .img-container img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
   .main-button {
@@ -202,7 +229,7 @@ nav {
 
   .main-button:hover {
     transform: translate(0px, -8px);
-    box-shadow: 0px 3px 17px black;
+    box-shadow: 0px 0px 17px var(--salmão);
   }
 
   @media (max-width: 1040px) {
@@ -258,11 +285,20 @@ nav {
   }
 
   footer a {
+    margin-top: 20px;
     font-weight: normal;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
+    transition: .7s ease;
+    border-bottom: solid 2px transparent;
+  }
+
+  footer a:hover {
+    transform: scale(1.1);
+    color: var(--salmão);
+    border-bottom: solid 2px var(--salmão);
   }
 
 
@@ -287,6 +323,7 @@ nav {
     width: 40vw;
     border-radius: 30px;
     text-align: justify;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   }
 
   .borda-img {
@@ -302,8 +339,8 @@ nav {
 
   .borda-img:hover {
     cursor: pointer;
-    box-shadow: 0px 3px 16px black;
-    transform: translate(0px, -8px);
+    box-shadow: 0px 0px 24px var(--azul2);
+    transform: scale(1.1);
   }
 
   .foto {
@@ -372,7 +409,7 @@ nav {
   }
 
   .ico-img:hover {
-    transform: translate(0px, -8px);
+    transform: scale(1.1);
   }
 
   @media (max-width: 1040px) {
