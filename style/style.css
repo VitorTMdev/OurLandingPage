@@ -170,11 +170,25 @@ header {
     border-radius: 600px;
     box-shadow: 0 0 25px var(--main-color);
     transition: .6s ease;
+    animation: light-up 3s ease-in-out infinite;
+}
+
+@keyframes light-up {
+    0% {
+        box-shadow: 0 0 25px var(--main-color);
+    }
+
+    50% {
+        box-shadow: 0 0 60px var(--main-color);
+    }
+
+    100% {
+        box-shadow: 0 0 25px var(--main-color);
+    }
 }
 
 .img-subcontainer:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 60px var(--main-color);
     cursor: pointer;
 }
 
@@ -322,6 +336,78 @@ header {
     width: 25vw;
     border-radius: 30px;
 }
+
+
+
+
+
+/* Contato */
+
+.contact {
+    padding: 20rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-subcontainer {
+    width: 30vw;
+    padding: 10px;
+    border: solid 4px var(--border-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .6s ease;
+}
+
+.contact-subcontainer:hover {
+    border: solid 4px var(--main-color);
+    box-shadow: 0 0 30px var(--main-color);
+    transform: translate(0, -20px);
+}
+
+.contact-img-container {
+    padding: 6px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin: 40px 0 100px 0;
+    box-shadow: 0 0 16px var(--main-color);
+    transition: .6s ease;
+}
+
+.contact-img-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px var(--main-color);
+}
+
+.contact-foto {
+    width: 12vw;
+    border-radius: 50%;
+}
+
+.contact-icon {
+    width: 8vw;
+    margin-bottom: 70px;
+    border-radius: 50%;
+    transition: .6s ease;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px #00ff62;
+    transform: scale(1.1);
+}
+
 
 
 
