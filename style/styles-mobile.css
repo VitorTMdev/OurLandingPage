@@ -1,0 +1,149 @@
+header {
+    flex-direction: column;
+}
+
+.navbar a {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+.container {
+    flex-direction: column-reverse;
+}
+
+.txt-subcontainer {
+    width: 80vw;
+}
+
+.main-title {
+    font-size: 2.8em;
+    text-shadow: 0 0 6px var(--main-color);
+}
+
+.main-subtitle {
+    font-size: 2em;
+}
+
+.txt-box {
+    font-size: 1.8em;
+}
+
+.main-button {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 30px var(--main-color);
+    transform: translate(0, -8px);
+}
+
+.img-subcontainer {
+    padding: 10px;
+    transform: scale(1.1);
+    box-shadow: 0 0 40px var(--main-color);
+    margin-bottom: 40px;
+}
+
+.img-subcontainer img {
+    width: 50vw;
+}
+
+/* Sobre Nós */
+.about-us {
+    padding: 20px;
+    width: 100vw;
+    
+}
+
+.about-us-container {
+    width: 90vw;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+.about-us-subcontainer {
+    width: 100%;
+    margin-bottom: 30px;
+    border: solid 3px var(--main-color);
+    box-shadow: 0 0 35px var(--main-color);
+    transform: translate(0, -12px);
+
+    .about-us-title {
+        transform: scale(1.1);
+        color: var(--main-color);
+        text-shadow: 0 0 3px var(--main-color);
+    }
+}
+
+.about-us--img-border img {
+    width: 40vw;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.about-us--txt-box {
+    width: 70vw;
+}
+
+/* Nossos Trabalhos */
+
+.our-projects {
+    padding: 8rem 0 0 0;
+}
+
+.our-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-projects-subcontainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.our-projects-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.our-projects-box .our-projects-title {
+    transform: translate(0, -20px);
+    color: var(--main-color);
+    text-shadow: 0 0 3px var(--main-color);
+}
+
+.our-projects-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .6s ease;
+    text-align: center;
+}
+
+.our-projects-sub-box {
+    padding: 2px 3px;
+    background-color: var(--border-color);
+    border-radius: 30px;
+    transition: .7s ease;
+    margin-bottom: 10px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.1);
+}
+
+.our-projects-sub-box img {
+    width: 80vw;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+}
